@@ -1,0 +1,6 @@
+induction b with k h,
+rw add_zero, rw add_zero,
+refl,
+rw add_succ (succ a) k, rw h,
+rw ← add_succ,
+refl,

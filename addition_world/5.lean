@@ -1,0 +1,6 @@
+induction n with k h,
+rw ← one_eq_succ_zero,
+rw zero_add,
+refl,
+rw succ_add, rw ← h,
+refl,
