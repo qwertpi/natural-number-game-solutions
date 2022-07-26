@@ -1,0 +1,8 @@
+induction b with k h,
+repeat {rw mul_zero}, rw add_zero,
+refl,
+rw mul_succ (succ a) k, rw h,
+rw succ_eq_add_one k, rw mul_add,
+rw mul_one,
+rw succ_eq_add_one,
+simp,
